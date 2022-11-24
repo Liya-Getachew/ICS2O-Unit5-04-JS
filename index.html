@@ -31,14 +31,14 @@
     </noscript>
     <link
       rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+      href="https://code.getmdl.io/1.3.0/material.pink-deep_orange.min.css"
       media="none"
       onload="if(media!='all')media='all'"
     />
     <noscript>
       <link
         rel="stylesheet"
-        href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+        href="https://code.getmdl.io/1.3.0/material.pink-deep_orange.min.css"
       />
     </noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -56,21 +56,38 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <p></p>
-        <img
-          src="./images/notebook-animation.svg"
-          alt="Computer"
-          width="25%"
-          height="25%"
-        />
-        <!-- Raised button with ripple -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <select class="mdl-textfield__input" id="day" name="day">
+            <option></option>
+            <option value="monday">monday</option>
+            <option value="tuesday">tuesday</option>
+            <option value="wednesday">wednesday</option>
+            <option value="thursday">thursday</option>
+            <option value="friday">friday</option>
+            <option value="saturday">saturday</option>
+            <option value="sunday">sunday</option>
+          </select>
+          <label class="mdl-textfield__label" for="Monday">monday</label>
+        </div>
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="age">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="age">
+              <label class="mdl-textfield__label" for="sample-expandable">my age:</label>
+            </div>
+          </div>
+        </form>
+         <-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
+          onclick="checkEligibility()"
         >
-          Say "Hello, World!"
+          eligibility
         </button>
-        <div id="hello-world"></div>
+        <div id="eligibility"></div>
       </main>
     </div>
   </body>
