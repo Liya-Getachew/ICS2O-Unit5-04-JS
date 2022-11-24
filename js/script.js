@@ -19,8 +19,8 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function checkEligibility() {
-  const day = (document.getElementById("day").value)
-  const age = (document.getElementById("age").value)
-  
+  const day = document.getElementById("day").value
+  const age = document.getElementById("age").value
+
   document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
 }
