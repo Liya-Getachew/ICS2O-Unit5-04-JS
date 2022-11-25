@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: #e6cccc;
 }
 
 p {
@@ -36,4 +36,12 @@ p {
 img {
   float: right;
   margin-right: 15px;
+}
+
+#eligibility {
+  padding-top: 15px;
+}
+
+#question {
+  font-size: 130%;
 }

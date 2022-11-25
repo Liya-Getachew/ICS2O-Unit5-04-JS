@@ -56,6 +56,7 @@
         </div>
       </header>
       <main class="mdl-layout__content">
+        <p id="question">Check if you're eligible for the museum discount here:</p>
         <div
           class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
         >
@@ -66,29 +67,30 @@
             <option value="wednesday">wednesday</option>
             <option value="thursday">thursday</option>
             <option value="friday">friday</option>
-            <option value="saturday">saturday</option>
-            <option value="sunday">sunday</option>
           </select>
           <label class="mdl-textfield__label" for="Monday">monday</label>
         </div>
+ <!-- Numeric Textfield -->
         <form action="#">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="age">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="age" />
-              <label class="mdl-textfield__label" for="sample-expandable"
-                >my age:</label
-              >
-            </div>
+          My age:
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              step="any"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="age"
+              placeholder="insert age here"
+              aria-label="age"
+            />
+            <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
-        <-- Raised button with ripple -->
+        <!-- Raised button with ripple -->
         <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="checkEligibility()"
-        >
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+          onclick="eligible()"
+          >
           eligibility
         </button>
         <div id="eligibility"></div>

@@ -7,7 +7,7 @@
 "use strict"
 
 /**
- * Check servie worker.
+ * Check service worker.
  */
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2O-Unit5-04-JS/sw.js", {
@@ -16,11 +16,12 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function displays checks if user is eligible for the discount.
  */
-function checkEligibility() {
+function eligible() {
+  //input
   const day = document.getElementById("day").value
   const age = document.getElementById("age").value
 
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+   document.getElementById("eligibilty").innerHTML = "no sorrryyy"
 }
