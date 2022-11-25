@@ -23,5 +23,5 @@ function eligible() {
   const day = document.getElementById("day").value
   const age = document.getElementById("age").value
 
-   document.getElementById("eligibilty").innerHTML = "no sorrryyy"
+  document.getElementById("eligibilty").innerHTML = "no sorrryyy"
 }
