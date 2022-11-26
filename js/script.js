@@ -23,9 +23,9 @@ function buttonOnClick() {
   const day = document.getElementById("day").value
   const age = document.getElementById("age").value
 
-  if (day == "Tuesday" || day == "Thursday") || (age > 12 && age < 25) {
+  if ((day == "Tuesday" || day == "Thursday") || (age > 12 && age < 25)) {
     document.getElementById("eligibility").innerHTML = "You are eligible for the discount."
   } else {
-    document.getElementById("eligibility").innerHTML = "no sorrryyy"
+    document.getElementById("eligibility").innerHTML = "You are NOT eligible for the discount."
   }
 }
