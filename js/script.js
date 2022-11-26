@@ -18,10 +18,14 @@ if (navigator.serviceWorker) {
 /**
  * This function displays checks if user is eligible for the discount.
  */
-function eligible() {
+function buttonOnClick() {
   //input
   const day = document.getElementById("day").value
   const age = document.getElementById("age").value
 
-  document.getElementById("eligibilty").innerHTML = "no sorrryyy"
+  if (day == "Tuesday" || day == "Thursday") || (age > 12 && age < 25) {
+    document.getElementById("eligibility").innerHTML = "You are eligible for the discount."
+  } else {
+    document.getElementById("eligibility").innerHTML = "no sorrryyy"
+  }
 }
